@@ -1,0 +1,50 @@
+.about {
+  background: var(--bg-warm);
+  padding: 80px 2rem 120px;
+}
+
+.about-inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.about h2 {
+  font-size: var(--type-section);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 0 40px 0;
+  color: #1a1a1a;
+}
+
+.about p {
+  font-size: var(--type-body);
+  line-height: 1.8;
+  margin-bottom: 24px;
+  color: #333;
+}
+
+.about p em {
+  font-style: italic;
+  color: #1a1a1a;
+}
+
+.about-meta {
+  margin-top: 40px;
+  padding-top: 40px;
+  border-top: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 60px 1.5rem 80px;
+  }
+
+  .about h2 {
+    font-size: 32px;
+  }
+
+  .about p {
+    font-size: 15px;
+  }
+}

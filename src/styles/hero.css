@@ -1,0 +1,49 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0 2rem 120px 2rem;
+  background: var(--bg-warm);
+  overflow: hidden;
+}
+
+.hero-content {
+  max-width: 100%;
+}
+
+.hero-title {
+  font-size: clamp(80px, 18vw, 200px);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 0.95;
+  margin: 0;
+  color: #1a1a1a;
+  word-spacing: 100vw;
+  text-transform: uppercase;
+}
+
+.hero-subtitle {
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+
+.hero-subtitle .serif-italic {
+  font-size: 16px;
+  text-transform: lowercase;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 60vh;
+    padding: 0 1.5rem 80px 1.5rem;
+  }
+
+  .hero-title {
+    font-size: clamp(48px, 14vw, 120px);
+  }
+
+  .hero-subtitle {
+    margin-top: 40px;
+  }
+}

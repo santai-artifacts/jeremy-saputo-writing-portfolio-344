@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'EB Garamond', serif;
+  background: #fafafa;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+/* Typography Scale */
+:root {
+  --type-meta: 12px;
+  --type-body: 16px;
+  --type-label: 22px;
+  --type-section: 48px;
+  --type-display: 120px;
+
+  --space-tight: 8px;
+  --space-loose: 80px;
+
+  --bg-warm: #fafafa;
+  --bg-cool: #000;
+  --text-soft: #666;
+  --accent: #d63384;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'EB Garamond', serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: var(--type-display);
+}
+
+h2 {
+  font-size: var(--type-section);
+  margin: var(--space-loose) 0 var(--space-tight) 0;
+}
+
+h3 {
+  font-size: var(--type-label);
+  font-weight: 600;
+}
+
+p {
+  font-size: var(--type-body);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+/* Monospace / Metadata */
+.mono, time, .meta, .caption {
+  font-family: 'Courier Prime', monospace;
+  font-size: var(--type-meta);
+  color: var(--text-soft);
+  letter-spacing: 0.02em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+a:hover {
+  border-bottom-color: currentColor;
+}
+
+.serif-italic {
+  font-family: 'EB Garamond', serif;
+  font-style: italic;
+  color: var(--text-soft);
+  font-size: var(--type-meta);
+}
